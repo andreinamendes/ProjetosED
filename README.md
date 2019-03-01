@@ -5,7 +5,7 @@ Resoluções e relatórios relativos às atividades da disciplina de Estrutura d
 
 # Minhas Informações 
 
-![](https://ibb.co/CJySZ3v)
+![](Perfil.jpeg)
 
 **Nome:** Andreina Maria Mendes da Silva   
 **Curso:** Engenharia de Computação/2018.1  
