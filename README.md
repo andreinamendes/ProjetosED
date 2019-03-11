@@ -32,15 +32,15 @@ Resoluções e relatórios relativos às atividades semanais da disciplina de Es
 ## 02. Queimada
 
 * O que eu fiz:    
-    *
+    * Fiz toda a atividade.
 * Com quem ou como eu fiz:  
-    *
+    * Estudei o código feito pelo professor e tentei fazer as diferentes funções adicionadas pelo professor em 2 versões de código tirirando algumas dúvidas com os colegas. 
 * O que aprendi e sei fazer:  
-    *
+    * Aprendi como funciona a pilha de execução de uma função recursiva e a usar a função rand.
 * O que ainda tenho dificuldade:  
-    *
+    * Em internalizar que cada chamada de recursiva é como se fosse uma função diferente, então quando vou fazer uma função resursiva ainda tenho dificuldade em resolver problemas relacionados à lógica.
 * Quanto tempo levei para fazer a atividade:  
-    *
+    * Cerca de 6 horas.
 
 ## 03. Labirinto
 

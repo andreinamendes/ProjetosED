@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h> 
 
 const char TREE = '#';
 const char FIRE = 'o';
@@ -20,6 +22,15 @@ void MostrarMatriz(int nLin, int nCol, char matriz[nLin][nCol]){
     getchar();    
 }
 
+void MisturarIndices(int indices[], int size){
+    for(int i = 0; i < size; i++){
+        int pos = rand() % size;
+        int aux= indices[i];
+        indices[i] = indices[pos];
+        indices[pos] = aux;
+    }
+}
+
 int TocarFogo(int nLin, int nCol, char matriz[nLin][nCol], int Lin, int Col){
     if((Lin < 0) || (Lin >= nLin) || (Col < 0) || (Col >= nCol))
         return 0;
@@ -28,8 +39,11 @@ int TocarFogo(int nLin, int nCol, char matriz[nLin][nCol], int Lin, int Col){
     matriz[Lin][Col] = FIRE;
     MostrarMatriz(nLin, nCol, matriz);
     int destruicao = 1;
+    int indices[] = {0, 1, 2, 3};
+    MisturarIndices(indices, sizeM);
     for(int a = 0; a < sizeM; a++){
-        destruicao += TocarFogo(nLin, nCol, matriz, Lin + L[a], Col + C[a]);
+        int position = indices[a];
+        destruicao += TocarFogo(nLin, nCol, matriz, Lin + L[position], Col + C[position]);
     }    
     matriz[Lin][Col] = BURN;
     MostrarMatriz(nLin, nCol, matriz);
@@ -37,7 +51,7 @@ int TocarFogo(int nLin, int nCol, char matriz[nLin][nCol], int Lin, int Col){
 }
 
 int main(){
-
+    srand(time(NULL));
     int nCol = 0;
     int nLin = 0;
     int Lin = 0;
@@ -48,7 +62,11 @@ int main(){
 
     for(int a = 0; a < nLin; a++)
         for(int i = 0; i < nCol; i++)
-            scanf(" %c", &matriz[a][i]);
+            if(rand() % 2 == 0)
+                matriz[a][i] = TREE;
+            else
+                matriz[a][i] = EMPTY;
+
     printf("\n");
     int destruicao;
     destruicao = TocarFogo(nLin, nCol, matriz, Lin, Col);

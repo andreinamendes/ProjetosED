@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+typedef struct aaaa(){
+
+    char nome[50];
+    char endereco[50];
+}proc;
+
+int main(){
+
+    proc a;
+
+    fgets(a);
+
+    return 0;
+}
