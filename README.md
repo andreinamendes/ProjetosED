@@ -1,5 +1,5 @@
 # Descrição do Repositório
-Resoluções e relatórios relativos às atividades semanais da disciplina de Estrutura de Dados.
+Resoluções, relatórios e informações relativas às atividades semanais da disciplina de Estrutura de Dados.
 
 #
 
@@ -16,7 +16,7 @@ Resoluções e relatórios relativos às atividades semanais da disciplina de Es
 
 # Relatórios das atividades
 
-## 01. Princesa
+## 1. Princesa
 
 * O que eu fiz:  
     * Fiz toda a atividade.
@@ -29,7 +29,7 @@ Resoluções e relatórios relativos às atividades semanais da disciplina de Es
 * Quanto tempo levei para fazer a atividade:
     * Cerca de 4 horas.
 
-## 02. Queimada
+## 2. Queimada
 
 * O que eu fiz:    
     * Fiz toda a atividade.
@@ -42,7 +42,61 @@ Resoluções e relatórios relativos às atividades semanais da disciplina de Es
 * Quanto tempo levei para fazer a atividade:  
     * Cerca de 6 horas.
 
-## 03. Labirinto
+## 3. Labirinto
+
+* O que eu fiz:  
+    *
+* Com quem ou como eu fiz:  
+    *
+* O que aprendi e sei fazer:  
+    *
+* O que ainda tenho dificuldade:  
+    *
+* Quanto tempo levei para fazer a atividade:  
+    *
+
+## 4. Fractais
+
+### 4.1. Árvore
+
+* O que eu fiz:  
+    *
+* Com quem ou como eu fiz:  
+    *
+* O que aprendi e sei fazer:  
+    *
+* O que ainda tenho dificuldade:  
+    *
+* Quanto tempo levei para fazer a atividade:  
+    *
+
+### 4.1. Fractal 2
+
+* O que eu fiz:  
+    *
+* Com quem ou como eu fiz:  
+    *
+* O que aprendi e sei fazer:  
+    *
+* O que ainda tenho dificuldade:  
+    *
+* Quanto tempo levei para fazer a atividade:  
+    *
+
+### 4.1. Fractal 3
+
+* O que eu fiz:  
+    *
+* Com quem ou como eu fiz:  
+    *
+* O que aprendi e sei fazer:  
+    *
+* O que ainda tenho dificuldade:  
+    *
+* Quanto tempo levei para fazer a atividade:  
+    *
+
+### 4.1. fractal 4
 
 * O que eu fiz:  
     *

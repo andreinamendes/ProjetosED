@@ -34,7 +34,6 @@ int CreateMaze(int nl, int nc, char Maze[nl][nc], int pos[]){
         return 0;
     Maze[pos[0]][pos[1]] = ' ';
     ShowMaze(nl, nc, Maze);
-    
     CreateMaze(nl, nc, Maze, pos);
 }
 
