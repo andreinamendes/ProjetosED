@@ -51,7 +51,7 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 * O que aprendi e sei fazer:  
     * Verificação indireta de vetores (usando valores de outros vetores com índices). 
 * O que ainda tenho dificuldade:  
-    * Função recursiva (não da pra entender isso por completo por que sempre aparece um problema que pede uma forma de utiização mais bugada/correta).
+    * Função recursiva (não da pra entender isso por completo por que sempre aparece um problema que pede uma forma de utização mais bugada/correta).
 * Quanto tempo levei para fazer a atividade:  
     * Fui fazendo partes do código durante 5 dias;
 
