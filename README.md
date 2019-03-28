@@ -58,11 +58,11 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 ## 4. Fractais
 
 * O que eu fiz:  
-    * Todos os .
+    * Todos os fractais.
 * Com quem ou como eu fiz:  
     * Fiz com a ajuda dos códigos feitos em sala e de colegas da turma.
 * O que aprendi e sei fazer:  
-    * De modo geral aprendi a utilizar as ferramentas da biblioteca necessárias para os fractais que fiz, apliquei o conhecimento de recursão adquirido em outros trabalhos, e também a fazer uma chamada recursiva dentro de um for (isso me deiixava confusa antes).
+    * De modo geral aprendi a utilizar as ferramentas da biblioteca necessárias para os fractais que fiz, apliquei o conhecimento de recursão adquirido em outros trabalhos, e também a fazer uma chamada recursiva dentro de um for (isso me deixava confusa antes).
 * O que ainda tenho dificuldade:  
     * Os cálculos envolvendo rotação de retas.
 * Quanto tempo levei para fazer a atividade:  
