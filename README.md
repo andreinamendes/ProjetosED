@@ -16,7 +16,7 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 
 # Relatórios das atividades
 
-## 1. Princesa
+## 01. Princesa
 
 * O que eu fiz:  
     * Fiz toda a atividade.
@@ -29,7 +29,7 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 * Quanto tempo levei para fazer a atividade:
     * Cerca de 4 horas.
 
-## 2. Queimada
+## 02. Queimada
 
 * O que eu fiz:    
     * Fiz toda a atividade.
@@ -42,7 +42,7 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 * Quanto tempo levei para fazer a atividade:  
     * Cerca de 6 horas.
 
-## 3. Labirinto
+## 03. Labirinto
 
 * O que eu fiz:  
     * Toda a atividade.
@@ -55,7 +55,7 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 * Quanto tempo levei para fazer a atividade:  
     * Fui fazendo partes do código durante 5 dias;
 
-## 4. Fractais
+## 04. Fractais
 
 * O que eu fiz:  
     * Todos os fractais.
@@ -68,17 +68,30 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 * Quanto tempo levei para fazer a atividade:  
     * No máximo 4 horas, para cada fractal.
 
-## 5. Princesa (Utilizando fila circular)
+## 05. Princesa (Utilizando fila circular)
 
 * O que eu fiz:  
-    *
+    * Toda a atividade.
 * Com quem ou como eu fiz:  
-    *
+    * Pedi ajuda a colegas com relação a criação da estrutura e funções da lista pois tenho dificuldade, mas com o código e funções relativas ao problema da princesa fiz quase todo sozinha.
 * O que aprendi e sei fazer:  
-    *
+    * A manipulação da estrutura.
 * O que ainda tenho dificuldade:  
-    *
+    * Ao funcionamento teorico, não sei explicar bem, eu preciso entender cada detalhe do funcionamento da estrutura para poder dizer que aprendi realmente.
 * Quanto tempo levei para fazer a atividade:  
-    *
+    * Duas tardes.
+
+## 06. Ordenação - Selection Sort, Insertion Sort e Bubble Sort
+
+* O que eu fiz:  
+    * Todos os algorítimos (Sem o uso da biblioteca xvet.h).
+* Com quem ou como eu fiz: 
+    * Pedi ajuda a alguns colegas sobre a lógica do algoritmo e fiz o código sozinha.
+* O que aprendi e sei fazer:  
+    * Aprendi a fazer os algoritmos.
+* O que ainda tenho dificuldade:  
+    * Talvez eu possa confundir os algoritmos na hora de implementar...
+* Quanto tempo levei para fazer a atividade:  
+    * 1 hora para o selection [:(], e 15 min para os outros dois.
 
 #
