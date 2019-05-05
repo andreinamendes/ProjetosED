@@ -3,11 +3,11 @@
 #include <time.h>
 #include <stdbool.h>
 
-void ShowMaze(int l, int c, char Maze[l][c]){
+void ShowMaze(int l, int c, char maze[l][c]){
     //printf("\n");
     for(int a = 0; a < l; a++){
         for(int i = 0; i < c;i++)
-            printf("%c", Maze[a][i]);
+            printf("%c", maze[a][i]);
         printf("\n");
     }
     setbuf(stdin, NULL);
@@ -37,39 +37,39 @@ void MixVector(int pos[]){
     }
 }
 
-int CreateMaze(int nl, int nc, char Maze[nl][nc], bool Visited[nl][nc], int l_i, int c_i){
+int CreateMaze(int nl, int nc, char maze[nl][nc], bool Visited[nl][nc], int l_i, int c_i){
     if(l_i < 1 || l_i == nl - 1 || c_i < 1 || c_i >= nc - 1)
         return 0;
-    if(Maze[l_i][c_i] != '@')
+    if(maze[l_i][c_i] != '@')
         return 0;
-    if(Neibers(nl, nc, Maze, l_i, c_i) > 1)
+    if(Neibers(nl, nc, maze, l_i, c_i) > 1)
         return 0;
-    Maze[l_i][c_i] = ' ';
+    maze[l_i][c_i] = ' ';
     int pos[] = {0, 1, 2, 3};
     MixVector(pos);
     for(int a = 0; a < 4; a++){
-        CreateMaze(nl, nc, Maze, Visited, l_i + L[pos[a]], c_i + C[pos[a]]);
+        CreateMaze(nl, nc, maze, Visited, l_i + L[pos[a]], c_i + C[pos[a]]);
     }
 }
 
-bool FindPosition(int nl, int nc, char Maze[nl][nc], bool Visited[nl][nc], int l_i, int c_i, int l_f, int c_f){
-    if(Maze[l_i][c_i] == '@' || Maze[l_f][c_f] == '@')
+bool FindPosition(int nl, int nc, char maze[nl][nc], bool Visited[nl][nc], int l_i, int c_i, int l_f, int c_f){
+    if(maze[l_i][c_i] == '@' || maze[l_f][c_f] == '@')
         return false;
     if(Visited[l_i][c_i] == true)
         return false;
     Visited[l_i][c_i] = true;
-    Maze[l_i][c_i] = '.';
+    maze[l_i][c_i] = '.';
     if(l_i == l_f && c_i == c_f)
         return true;
     int pos[] = {0, 1, 2, 3};
     MixVector(pos);
     bool result = 0;
     for(int a = 0; a < 4; a++){
-        result = FindPosition(nl, nc, Maze, Visited, l_i + L[pos[a]], c_i + C[pos[a]], l_f, c_f);
+        result = FindPosition(nl, nc, maze, Visited, l_i + L[pos[a]], c_i + C[pos[a]], l_f, c_f);
         if(result)
             return true;
     }
-    Maze[l_i][c_i] = ' ';
+    maze[l_i][c_i] = ' ';
     return false;
 }
 

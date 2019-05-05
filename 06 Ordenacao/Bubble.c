@@ -25,7 +25,7 @@ int find_menor(int vector[], int a, int b){
     return imenor;
 }
 
-void Insertion(int vector[], int n){
+void bubble(int vector[], int n){
     for(int a = 0; a < n; a++){
         for(int i = 0; i < n - 1; i++){
             int imenor = find_menor(vector, i, i+1);    

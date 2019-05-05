@@ -92,6 +92,46 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 * O que ainda tenho dificuldade:  
     * Talvez eu possa confundir os algoritmos na hora de implementar...
 * Quanto tempo levei para fazer a atividade:  
-    * 1 hora para o selection [:(], e 15 min para os outros dois.
+    * 1 hora para o selection [:(], e 15 min para os outros dois.  
+
+## 07. Floodfill/Pathfinding  
+
+* O que eu fiz:  
+    * 
+* Com quem ou como eu fiz:   
+    * 
+* O que aprendi e sei fazer:  
+    * 
+* O que ainda tenho dificuldade:  
+    * 
+* Quanto tempo levei para fazer a atividade:  
+    *  
+
+## 08. Banco/Editor
+
+* O que eu fiz:  
+    * O Banco completo.
+* Com quem ou como eu fiz: 
+    * Fiz sozinha mas tirei algumas dúvidas com colegas.
+* O que aprendi e sei fazer:  
+    * A referenciar as estruturas.
+* O que ainda tenho dificuldade:  
+    * Trabalhar com iterador.
+* Quanto tempo levei para fazer a atividade:  
+    * 10 horas, talvez.  
+
+
+## 09. Comparativo  
+
+* O que eu fiz:  
+    * 
+* Com quem ou como eu fiz:  
+    * 
+* O que aprendi e sei fazer:  
+    * 
+* O que ainda tenho dificuldade:  
+    * 
+* Quanto tempo levei para fazer a atividade:  
+    * 
 
 #
