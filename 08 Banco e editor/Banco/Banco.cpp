@@ -97,7 +97,7 @@ void qt_caixas(int docs_recive, int qtd_caixas){
 int main(){
 
     Banco banco;
-    int pac = 0, docs = 0, qtd_caixas = 4, docs_recive = 0, docs_lost = 0, turnos = 0;
+    int pac = 0, docs = 0, qtd_caixas = 0, docs_recive = 0, docs_lost = 0, turnos = 0;
     string cmd, id;
     bool ini_caixas = false;
 
