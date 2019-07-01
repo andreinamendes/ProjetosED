@@ -75,12 +75,12 @@ bool FindPosition(int nl, int nc, char maze[nl][nc], bool Visited[nl][nc], int l
 
 int main(){
     srand(time(NULL));
-    int Col = 0;
-    int Lin = 0;
+    int Col = 0, Lin = 0;
     printf("Digite o número de linhas: ");
     scanf(" %d", &Lin);
     printf("Digite o número de colunas: ");
     scanf(" %d", &Col);
+    
     char Maze[Lin][Col];
     bool Visited[Lin][Col];
 
@@ -94,15 +94,15 @@ int main(){
 
     CreateMaze(Lin, Col, Maze, Visited, 1, 1);
     ShowMaze(Lin, Col, Maze);
-    int Lin_i = 0;
-    int Col_i = 0;
-    int Lin_f = 0;
-    int Col_f = 0;
+
+    int Lin_i = 0, Col_i = 0, Lin_f = 0, Col_f = 0;
     printf("Digite a linha e a coluna inicial, respectivamente: ");
     scanf(" %d %d", &Lin_i, &Col_i);
     printf("Digite a linha e a coluna final, respectivamente: ");
     scanf(" %d %d", &Lin_f, &Col_f);
+
     FindPosition(Lin, Col, Maze, Visited, Lin_i, Col_i, Lin_f, Col_f);
     ShowMaze(Lin, Col, Maze);
+
     return 0;
 }

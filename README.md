@@ -3,11 +3,11 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 
 #
 
-# Minhas Informações 
+# Minhas Informações
 
 ![](Perfil.png)
 
-**Nome:** Andreina Maria Mendes da Silva   
+**Nome:** Andreina Maria Mendes da Silva  
 **Curso:** Engenharia de Computação / 2018.1  
 **Turma:** Estrutura de Dados / 2019.1  
 **Professor:** David Sena  
@@ -31,7 +31,7 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 
 ## 02. Queimada
 
-* O que eu fiz:    
+* O que eu fiz:  
     * Fiz toda a atividade.
 * Com quem ou como eu fiz:  
     * Estudei o código feito pelo professor e tentei fazer as diferentes funções adicionadas pelo professor em 2 versões de código tirirando algumas dúvidas com os colegas. 
@@ -49,7 +49,7 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 * Com quem ou como eu fiz:  
     * Fiz com a ajuda de colegas de sala.
 * O que aprendi e sei fazer:  
-    * Verificação indireta de vetores (usando valores de outros vetores com índices). 
+    * Verificação indireta de vetores (usando valores de outros vetores com índices).  
 * O que ainda tenho dificuldade:  
     * Função recursiva (não da pra entender isso por completo por que sempre aparece um problema que pede uma forma de utização mais bugada/correta).
 * Quanto tempo levei para fazer a atividade:  
@@ -85,7 +85,7 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 
 * O que eu fiz:  
     * Todos os algorítimos (Sem o uso da biblioteca xvet.h).
-* Com quem ou como eu fiz: 
+* Com quem ou como eu fiz:  
     * Pedi ajuda a alguns colegas sobre a lógica do algoritmo e fiz o código sozinha.
 * O que aprendi e sei fazer:  
     * Aprendi a fazer os algoritmos.
@@ -94,11 +94,11 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 * Quanto tempo levei para fazer a atividade:  
     * 1 hora para o selection [:(], e 15 min para os outros dois.  
 
-## 07. Floodfill/Pathfinding  
+## 07. Pathfind  
 
 * O que eu fiz:  
     * 
-* Com quem ou como eu fiz:   
+* Com quem ou como eu fiz:  
     * 
 * O que aprendi e sei fazer:  
     * 
@@ -107,21 +107,33 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 * Quanto tempo levei para fazer a atividade:  
     *  
 
-## 08. Banco/Editor
+## 08. Banco
 
 * O que eu fiz:  
-    * O Banco completo.
-* Com quem ou como eu fiz: 
+    * A atiidade toda.
+* Com quem ou como eu fiz:  
     * Fiz sozinha mas tirei algumas dúvidas com colegas.
 * O que aprendi e sei fazer:  
     * A referenciar as estruturas.
 * O que ainda tenho dificuldade:  
-    * Trabalhar com iterador.
+    * Entender por que iterador pode ser incrementado.
 * Quanto tempo levei para fazer a atividade:  
-    * 10 horas, talvez.  
+    * 10 horas, talvez.
 
+## 09. Editor
 
-## 09. Comparativo  
+* O que eu fiz:  
+    * 
+* Com quem ou como eu fiz:  
+    * 
+* O que aprendi e sei fazer:  
+    * 
+* O que ainda tenho dificuldade:  
+    * 
+* Quanto tempo levei para fazer a atividade:  
+    *  
+
+## 10. Questões Tree
 
 * O que eu fiz:  
     * 
