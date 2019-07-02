@@ -91,11 +91,11 @@ void tic_tac(Banco *banco, int qtd_caixas, int *docs_lost, int *docs_recive){
 }
 
 void qt_caixas(int docs_recive, int qtd_caixas){
-    int qt_caixas = docs_recive - (qtd_caixas * 100);
+    int qt_caixas = (docs_recive - qtd_caixas) * 100;
+    cout << "A quantidade ideal de caixas é: " <<qt_caixas << endl;
 }
 
 int main(){
-
     Banco banco;
     int pac = 0, docs = 0, qtd_caixas = 0, docs_recive = 0, docs_lost = 0, turnos = 0;
     string cmd, id;
@@ -110,32 +110,33 @@ int main(){
         if(cmd == "init"){
             if(ini_caixas == false){
                 in >> qtd_caixas;
-                for(auto a = 0; a < qtd_caixas; a++){
+                for(auto a = 0; a < qtd_caixas; a++)
                     banco.caixas.push_back(nullptr);
-                }
                 ini_caixas = true;
             }
         }else if(cmd == "tic"){
             tic_tac(&banco, qtd_caixas, &docs_lost, &docs_recive);
             turnos++;
         }else if(cmd == "show"){
+            cout << endl;
             show_all(banco, ini_caixas);
+            cout << endl;
         }else if(cmd == "in"){
-                in >> id >> docs >> pac;
-                Client *client = new Client(id, docs, pac);
-                banco.fila_entrada.push_back(client);
+            in >> id >> docs >> pac;
+            Client *client = new Client(id, docs, pac);
+            banco.fila_entrada.push_back(client);
         }else if(cmd == "finalizar"){
             cout << "Docs recebidos: " << docs_recive << endl;
             cout << "Docs perdidos: " << docs_lost << endl;
             cout << "Turnos: " << turnos << endl;
         }else if(cmd == "end"){
-            return 0;
+            break;
         }else{
             cout << "Comando inválido" << endl;
         }
     }
 
-   qt_caixas(docs_recive, qtd_caixas);
+    qt_caixas(docs_recive, qtd_caixas);
 
     return 0;
 }
