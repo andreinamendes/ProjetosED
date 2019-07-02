@@ -14,11 +14,10 @@ struct Ambient{
 
     void _insert(char texto){
         this->texto.insert(cursor, texto);
-        this->cursor = this->cursor++;
     }
 
     void show(){
-        //cout << endl;
+        cout << endl;
         for(list<char>::iterator a = this->texto.begin(); a != this->texto.end(); a++){
             if(a == this->cursor)
                 cout << '|';
@@ -53,134 +52,158 @@ struct Ambient{
             this->cursor--;
     }
 
-    int cont_char(){
-        auto pos = this->cursor;
-        int cont = 0;
-        while(*pos != '\n' && pos != this->texto.begin()){
-            cont++;
-            pos--;
-        }
-        if(cont != 1)
-            return cont - 1;
-        return cont;
-    }
+    ///////////////////////////////////////
+    ////////////// UP E DOWN //////////////
+    ///////////////////////////////////////
 
-    list<char>::iterator find_break_line(bool side, list<char>::iterator pos){
-        if(side){
-            if(pos == this->texto.begin())
-                return pos;
-            if(*pos == '\n')
-                pos--;
-            while(*pos != '\n' && pos != this->texto.begin())
-                pos--;
-            return --pos;
-        }else{
-            if(pos == this->texto.end())
-                return pos;
-            while(*pos != '\n' && pos != this->texto.end())
-                pos++;
-            return --pos;
-        }
-    }
-
-    void move_cursor(int qtd, bool side){
-        auto pos = this->cursor;
-        pos = find_break_line(side, pos);
-        if(side){
-            if(pos == this->texto.begin()){
-                this->cursor = pos;
-                return;
-            }
-        }else{
-            if(pos == this->texto.end()){
-                this->cursor = pos;
-                return;
-            }
-        }
-        pos = find_break_line(side, pos);
-        this->cursor = pos;
-        for(int a = 0; (*this->cursor != '\n' && a < qtd && this->cursor != this->texto.end()); a++)
-            this->cursor++;
-    }
-
-    void up(){
-        bool line_break = false;
-        if(*this->cursor == '\n')
-            this->cursor--;
-        for(auto a = this->cursor; a != this->texto.begin(); a--)
-            if(*a == '\n'){
-                line_break = true;
-                break;
-            }
-        if(line_break){
-            int cont = cont_char();
-            //cout << cont << endl;
-            move_cursor(cont, true);
-        }else
-            this->cursor = this->texto.begin();
-    }
-
-    void down(){
-        bool line_break = false;
-        for(auto a = this->cursor; a != this->texto.end(); a++)
-            if(*a == '\n'){
-                line_break = true;
-                break;
-            }
-        if(line_break){
-            int cont = cont_char();
-            move_cursor(cont, false);
-        }else
-            this->cursor = this->texto.end();
-    }
-
-    // void undo(){
-        
+    // int cont_char(){
+    //     auto pos = this->cursor;
+    //     int cont = 0;
+    //     while(*pos != '\n' && pos != this->texto.begin()){
+    //         cont++;
+    //         pos--;
+    //     }
+    //     if(cont != 1)
+    //         return cont - 1;
+    //     return cont;
     // }
 
-    // void redo(){
-        
+    // list<char>::iterator find_break_line(bool side, list<char>::iterator pos){
+    //     if(side){
+    //         if(pos == this->texto.begin())
+    //             return pos;
+    //         if(*pos == '\n')
+    //             pos--;
+    //         while(*pos != '\n' && pos != this->texto.begin())
+    //             pos--;
+    //         return --pos;
+    //     }else{
+    //         if(pos == this->texto.end())
+    //             return pos;
+    //         while(*pos != '\n' && pos != this->texto.end())
+    //             pos++;
+    //         return --pos;
+    //     }
     // }
+
+    // void move_cursor(int qtd, bool side){
+    //     auto pos = this->cursor;
+    //     pos = find_break_line(side, pos);
+    //     if(side){
+    //         if(pos == this->texto.begin()){
+    //             this->cursor = pos;
+    //             return;
+    //         }
+    //     }else{
+    //         if(pos == this->texto.end()){
+    //             this->cursor = pos;
+    //             return;
+    //         }
+    //     }
+    //     pos = find_break_line(side, pos);
+    //     this->cursor = pos;
+    //     for(int a = 0; (*this->cursor != '\n' && a < qtd && this->cursor != this->texto.end()); a++)
+    //         this->cursor++;
+    // }
+
+    // void up(){
+    //     bool line_break = false;
+    //     if(*this->cursor == '\n')
+    //         this->cursor--;
+    //     for(auto a = this->cursor; a != this->texto.begin(); a--)
+    //         if(*a == '\n'){
+    //             line_break = true;
+    //             break;
+    //         }
+    //     if(line_break){
+    //         int cont = cont_char();
+    //         //cout << cont << endl;
+    //         move_cursor(cont, true);
+    //     }else
+    //         this->cursor = this->texto.begin();
+    // }
+
+    // void down(){
+    //     bool line_break = false;
+    //     for(auto a = this->cursor; a != this->texto.end(); a++)
+    //         if(*a == '\n'){
+    //             line_break = true;
+    //             break;
+    //         }
+    //     if(line_break){
+    //         int cont = cont_char();
+    //         move_cursor(cont, false);
+    //     }else
+    //         this->cursor = this->texto.end();
+    // }
+
+    ///////////////////////////////////////
+    //////////// FIM UP E DOWN ////////////
+    ///////////////////////////////////////
 
 };
 
 struct Editor{
     list<Ambient> linha_temporal;
     list<Ambient>::iterator estado_atual;
+
+    Editor(Ambient atual){
+        this->linha_temporal.push_back(atual);
+        this->estado_atual = this->linha_temporal.begin();
+    }
 };
 
 int main(){
-    Ambient* editor = new Ambient();
+    Ambient* atual = new Ambient();
     string input;
     char cmd;
 
-    //while(true){
+    Editor* editor = new Editor(*atual);
+
+    while(true){
         getline(cin, input);
         stringstream ss(input);
 
         while(ss >> cmd){
             if(cmd == 'R'){
-                editor->_insert('\n');
+                atual->_insert('\n');
+                editor->linha_temporal.push_back(*atual);
+                editor->estado_atual++;
             }else if(cmd == 'B'){
-                editor->backspace();
+                atual->backspace();
+                editor->linha_temporal.push_back(*atual);
+                editor->estado_atual++;
             }else if(cmd == 'D'){
-                editor->_delete();
+                atual->_delete();
+                editor->linha_temporal.push_back(*atual);
+                editor->estado_atual++;
             }else if(cmd == '>'){
-                editor->move_right();
+                atual->move_right();
             }else if(cmd == '<'){
-                editor->move_left();
+                atual->move_left();
             }else if(cmd == 'Z'){
-                //editor->redo();
+                if(editor->estado_atual != editor->linha_temporal.begin()){
+                    editor->estado_atual--;
+                    *atual = *editor->estado_atual;
+                }
             }else if(cmd == 'Y'){
-                //editor->undo();
+                list<Ambient>::iterator aux = editor->estado_atual;
+                aux++;
+                if(aux != editor->linha_temporal.end()){
+                    editor->estado_atual++;
+                    *atual = *editor->estado_atual;
+                }
             }else if(cmd == 'A'){
-                editor->up();
+                //atual->up();
             }else if(cmd == 'V'){
-                editor->down();
+                //atual->down();
             }else{
-                editor->_insert(cmd);
+                atual->_insert(cmd);
+                editor->linha_temporal.push_back(*atual);
+                editor->estado_atual++;
             }
         }
-        editor->show();
-    //}
+        atual->show();
+        //cout << "Último ambiente: " << editor->estado_atual->texto.front() << endl;
+    }
 }

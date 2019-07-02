@@ -13,7 +13,7 @@ struct Pos{
 };
 
 vector<Pos> get_neibs(int l, int c){
-    return vector<Pos> {Pos(l, c - 1), Pos(l - 1, c), Pos(l, c + 1), Pos(l + 1, c), Pos(l - 1, c - 1), Pos(l - 1, c + 1), Pos(l + 1, c - 1), Pos(l + 1, c + 1)};
+    return vector<Pos> {Pos(l, c - 1), Pos(l - 1, c), Pos(l, c + 1), Pos(l + 1, c)};
 }
 
 bool has_value(vector<string> &mat, int l, int c, char value){
