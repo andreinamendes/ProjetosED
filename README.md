@@ -123,27 +123,27 @@ Resoluções, relatórios e informações relativas às atividades semanais da d
 ## 09. Editor
 
 * O que eu fiz:  
-    * 
+    * Todas as funções exceto o Up e o Down.
 * Com quem ou como eu fiz:  
-    * 
+    * Alguns amigos me ajudaram com a lógica.
 * O que aprendi e sei fazer:  
-    * 
+    * Tabalhar com iteradores.
 * O que ainda tenho dificuldade:  
-    * 
+    * Entender minuciosamente a lógica dos meus códigos.
 * Quanto tempo levei para fazer a atividade:  
-    *  
+    *  Foram muitas horas de tentativas falhas, talvez umas 10 horas pordutivas e outras 10 só procurando erro besta.
 
 ## 10. Questões Tree
 
 * O que eu fiz:  
-    * 
+    * Todas as questões.
 * Com quem ou como eu fiz:  
-    * 
+    * Coma ajuda de colegas.
 * O que aprendi e sei fazer:  
-    * 
+    * Imprimir e percorrer uma árvore.
 * O que ainda tenho dificuldade:  
-    * 
+    * Retorno de recursão.
 * Quanto tempo levei para fazer a atividade:  
-    * 
+    * 3 tardes, talvez.
 
 #
